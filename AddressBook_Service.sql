@@ -34,3 +34,7 @@ select * from AddressBook;
 --UC6-Ability to Retrieve Person belonging to a City or State from the Address Book.
 select * from AddressBook Where City = 'Beed';
 select * from AddressBook Where State = 'Maharashtra';
+
+--UC7:Ability to understand the size
+SELECT City, COUNT(City) AS CITY_COUNT FROM AddressBook GROUP BY City;
+SELECT State, COUNT(State) AS STATE_COUNT FROM AddressBook GROUP BY State;
