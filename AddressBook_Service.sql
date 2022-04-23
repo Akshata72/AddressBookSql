@@ -12,3 +12,13 @@ State varchar(50),
 Zip int,
 Phone_Number bigint,
 EmailID varchar(50));
+
+--UC3-Ability to insert new Contacts to Address Book.
+INSERT INTO AddressBook(First_Name, Last_Name, Address, City, State, Zip, Phone_Number, EmailID)VALUES
+('Ajinkya', 'Shinde', 'Apegaon', 'Ambejogai', 'Maharashtra', 431517, 8806184089, 'shindeaj@gmail.com'),
+('Sachin', 'Dhage', 'Dhanora', 'Latur', 'Maharashtra', 433546, 8806184087, 'dhage@gmail.com'),
+('Supriya', 'Kadam', 'Tadola', 'Solapur', 'Maharashtra', 411016, 8806184085, 'kadamsupriy@gmail.com'),
+('Ketaki', 'Kulkarni', 'Parali', 'Beed', 'Maharashtra', 400154, 8806184082, 'kulkarni@gmail.com'),
+('Pratiksha', 'Tat', 'Kothrude', 'Pune', 'Maharashtra', 4110343, 9702420754, 'pratiksha@gmail.com');
+
+SELECT * from AddressBook;
