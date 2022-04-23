@@ -38,3 +38,8 @@ select * from AddressBook Where State = 'Maharashtra';
 --UC7:Ability to understand the size
 SELECT City, COUNT(City) AS CITY_COUNT FROM AddressBook GROUP BY City;
 SELECT State, COUNT(State) AS STATE_COUNT FROM AddressBook GROUP BY State;
+
+
+--UC8-Ability to retrieve entries sorted alphabetically by Person’s name for a given city
+
+SELECT * FROM AddressBook WHERE City = 'Latur' ORDER BY First_Name;
