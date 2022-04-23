@@ -22,3 +22,7 @@ INSERT INTO AddressBook(First_Name, Last_Name, Address, City, State, Zip, Phone_
 ('Pratiksha', 'Tat', 'Kothrude', 'Pune', 'Maharashtra', 4110343, 9702420754, 'pratiksha@gmail.com');
 
 SELECT * from AddressBook;
+
+--UC4-Ability to edit existing contact person using their name.
+UPDATE AddressBook set Phone_Number = 8303245412 where First_Name='Sachin';
+SELECT * from AddressBook;
