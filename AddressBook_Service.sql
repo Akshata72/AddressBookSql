@@ -26,3 +26,7 @@ SELECT * from AddressBook;
 --UC4-Ability to edit existing contact person using their name.
 UPDATE AddressBook set Phone_Number = 8303245412 where First_Name='Sachin';
 SELECT * from AddressBook;
+
+--UC5-Ability to delete a person using person's name.
+Delete from AddressBook where First_Name = 'Supriya';
+select * from AddressBook;
