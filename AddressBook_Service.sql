@@ -51,3 +51,10 @@ select * from AddressBook;
 Update AddressBook set Type ='FRIENDS';
 Update AddressBook set Type ='FAMILY' WHERE First_Name = 'Ajinkya';
 Update AddressBook set Type ='Profession' Where First_Name ='Sachin';
+
+--UC10-Ability to get number of contact persons i.e. count by type.
+Select Type,Count(Type) As Type_Count from AddressBook GROUP BY Type;
+
+--UC11:Ability to add in both family and friend
+INSERT INTO  AddressBook (First_Name, Last_Name, Address, City, State, Zip, Phone_Number, EmailID , Type)VALUES
+('Sachin', 'Dhage', 'Dhanora', 'Latur', 'Maharashtra', '433546', '8303245412', 'dhage@gmail.com', 'FRIENDS');
